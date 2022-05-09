@@ -1,13 +1,13 @@
 site_name: "EVA"
-site_url: "https://main.eva-3d.page/"
+site_url: "http://fallspell.github.io/eva-main-2.4.2"
 site_author: "Paweł Kucmus"
 site_description: "EVA 2 - 3D printer carriage platform"
 edit_uri: ""
 
 copyright: Copyright &copy; 2022 Paweł Kucmus
 
-repo_name: EVA-3D / eva-main
-repo_url: https://github.com/EVA-3D/eva-main
+repo_name: fallspell / eva-main-2.4.2
+repo_url: https://github.com/fallspell/eva-main-2.4.2
 
 theme:
   logo: assets/logo_white_outline.svg
@@ -77,8 +77,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: EVA-3D
-      repo: eva-main 
+      user: fallsell
+      repo: eva-main-2.4.2 
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
