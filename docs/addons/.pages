@@ -1,0 +1,6 @@
+collapse_single_pages: true
+nav:
+    - x_endstop
+    - probes
+    - cartesian_idex
+    - ...
