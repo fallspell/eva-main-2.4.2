@@ -1,0 +1,92 @@
+site_name: "EVA"
+site_url: "https://main.eva-3d.page/"
+site_author: "Paweł Kucmus"
+site_description: "EVA 2 - 3D printer carriage platform"
+edit_uri: ""
+
+copyright: Copyright &copy; 2022 Paweł Kucmus
+
+repo_name: EVA-3D / eva-main
+repo_url: https://github.com/EVA-3D/eva-main
+
+theme:
+  logo: assets/logo_white_outline.svg
+  favicon: assets/logo_white_outline.svg
+  language: en
+  name: material
+  custom_dir: overrides
+  palette:
+    scheme: slate
+    primary: green
+    accent: lime
+  features:
+    # - navigation.instant
+    # - navigation.sections
+    # - navigation.top
+    # - navigation.expand
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - awesome-pages
+  - eva-3d-plugin:
+      version: 2.4.2
+  - exclude:
+      glob:
+        - "*.zip"
+
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js
+  - https://unpkg.com/vuex@2.0.0
+  # - https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js
+  - https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js
+  - https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2.4.1/js-cloudimage-360-view.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - js/extra.js
+
+markdown_extensions:
+  - abbr
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.highlight:
+  #     linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: EVA-3D
+      repo: eva-main 
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
